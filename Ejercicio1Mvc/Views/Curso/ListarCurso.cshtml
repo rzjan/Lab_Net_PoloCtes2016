@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "AddCurso";
+}
+
+<div>
+
+    <h2>Lista de cursos:</h2>
+    <ul>
+        <h4> Id | Nombre:   | Precio</h4>
+        @foreach (var item in @ViewBag.listaCurso)
+        {
+            <li>
+                @item.Id |
+                @item.DescCurso |
+                $ @item.Precio |
+            </li>
+        }
+    </ul>
+
+</div>
